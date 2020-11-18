@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "FromZeroToHero": {
+      "commandName": "Project",
+      "commandLineArgs": "preview"
+    }
+  }
+}
