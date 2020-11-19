@@ -1,13 +1,8 @@
 @model FromZeroToHero.Models.Hero;
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>@Model.Headline</title>
-</head>
-<body>
+@{
+  ViewBag.Title = @Model.Headline;
+}
   <h1>@Model.Headline</h1>
   <div>
     @Model.Summary
@@ -15,5 +10,3 @@
   <div>
     <a href="@Model.CtaUrl">@Model.CtaLabel</a>
   </div>
-</body>
-</html>
