@@ -1,6 +1,6 @@
 # Statiq boilerplate for Kontent
 
-Boilerplate utilizing [Statiq](https://statiq.dev/) and [Kentico Kontent](https://kontent.ai) to provide starting point in the Jamstack world for .NET developers.
+Boilerplate utilizing [Statiq](https://statiq.dev/) and [Kentico Kontent](https://kontent.ai) to provide a starting point in the Jamstack world for .NET developers.
 
 ![Screenshot](./screenshot.png)
 
