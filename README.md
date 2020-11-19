@@ -60,4 +60,4 @@ All of the information about boilerplate creation and the content modeling in Ke
 
 ## Resources
 
-See more complex sample application: [Kentico Kontent Statiq - Lument Starter](https://github.com/Kentico/statiq-starter-kontent-lumen 
+See more complex sample application: [Kentico Kontent Statiq - Lumen Starter](https://github.com/Kentico/statiq-starter-kontent-lumen 
