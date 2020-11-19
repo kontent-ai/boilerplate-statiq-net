@@ -1,3 +1,5 @@
+@using Statiq.Common
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,10 +7,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>@ViewBag.Title</title>
+  <link rel="stylesheet" href="@IExecutionContext.Current.GetLink("/styles/main.css")" />
+
 </head>
 
 <body>
-  @RenderBody()
+  <div class="layout">
+    @RenderBody()
+  </div>
 </body>
 
 </html>

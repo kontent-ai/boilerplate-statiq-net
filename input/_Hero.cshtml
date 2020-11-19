@@ -3,10 +3,13 @@
 @{
   ViewBag.Title = @Model.Headline;
 }
-  <h1>@Model.Headline</h1>
-  <div>
+
+<div class="hero">
+  <h1 class="append-dot">@Model.Headline</h1>
+  <div class="summary">
     @Model.Summary
   </div>
-  <div>
+  <div class="button">
     <a href="@Model.CtaUrl">@Model.CtaLabel</a>
   </div>
+<div>
