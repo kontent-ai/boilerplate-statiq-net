@@ -56,4 +56,4 @@ dotnet run -- preview
 
 ## How it's build
 
-All of the information about boilerplate creation and the content modeling in Kentico Kontent have been written up on the blog post [Jamstack on .NET - From zero to hero with Statiq and Kontent](https://ondrej.chrastina/journal/jamstack-on-net-from-zero-to-hero-with-statiq-and-kontent).
+All of the information about boilerplate creation and the content modeling in Kentico Kontent have been written up on the blog post [Jamstack on .NET - From zero to hero with Statiq and Kontent](https://ondrej.chrastina.tech/journal/jamstack-on-net-from-zero-to-hero-with-statiq-and-kontent).
