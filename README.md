@@ -57,3 +57,7 @@ dotnet run -- preview
 ## How it's build
 
 All of the information about boilerplate creation and the content modeling in Kentico Kontent have been written up on the blog post [Jamstack on .NET - From zero to hero with Statiq and Kontent](https://ondrej.chrastina.tech/journal/jamstack-on-net-from-zero-to-hero-with-statiq-and-kontent).
+
+## Resources
+
+See more complex sample application: [Kentico Kontent Statiq - Lument Starter](https://github.com/Kentico/statiq-starter-kontent-lumen 
