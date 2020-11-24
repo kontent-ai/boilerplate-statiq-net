@@ -2,6 +2,7 @@
 using FromZeroToHero.Models;
 using Kentico.Kontent.Delivery.Abstractions;
 using Kentico.Kontent.Delivery.Extensions;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Statiq.App;
 using Statiq.Common;
@@ -20,10 +21,7 @@ namespace FromZeroToHero
                 // Add the type provider
                 services.AddSingleton<ITypeProvider, CustomTypeProvider>();
                 // Configure Delivery SDK
-                services.AddDeliveryClient(opts =>
-                    opts.WithProjectId("cee1708b-4db8-0045-5b86-0135b747a1d4")
-                        .UseProductionApi()
-                        .Build());
+                services.AddDeliveryClient((IConfiguration)config);
             })
             .RunAsync();
     }
