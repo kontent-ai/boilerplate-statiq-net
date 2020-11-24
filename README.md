@@ -46,7 +46,7 @@ dotnet run -- preview
     > Go to your Kontent project and [publish all the imported items](https://docs.kontent.ai/tutorials/write-and-collaborate/publish-your-work/publish-content-items).
 
 1. Map the codebase to the data source
-    - adjust the `WithProjectId` call in [Program.cs](./Program.cs) with your project ID.
+    - adjust the `ProjectId` property in [appsettings.json](./appsettings.json) with your project ID.
 
 🚀 **You are now ready to use the site with your own Kentico Kontent project as data source on <http://localhost:5080>!** 🚀
 
