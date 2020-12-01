@@ -1,7 +1,7 @@
 # Statiq boilerplate for Kontent
 
 ![Build and publish](https://github.com/Kentico/kontent-boilerplate-statiq-net/workflows/Publish/badge.svg)
-[![Live Demo](https://img.shields.io/badge/Live-DEMO-brightgreen.svg?logo=github&logoColor=white)](http://ondrej.chrastina.tech/kontent-boilerplate-statiq-net)
+[![Live Demo](https://img.shields.io/badge/Live-DEMO-brightgreen.svg?logo=github&logoColor=white)](https://kentico.github.io/kontent-boilerplate-statiq-net)
 
 Boilerplate utilizing [Statiq](https://statiq.dev/) and [Kentico Kontent](https://kontent.ai) to provide a starting point in the Jamstack world for .NET developers.
 
