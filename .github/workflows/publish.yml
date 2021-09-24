@@ -33,8 +33,8 @@ jobs:
     - name: Publish
       run: dotnet run --configuration Release  
       env:
-        LinkRoot: ${{ secrets.LINKROOT }} != null ? ${{ secrets.LINKROOT }} : "kentico.github.io" # Fix subfolder links https://statiq.dev/framework/configuration/settings
-        Host:  ${{ secrets.HOST }} != "" ?  ${{ secrest.HOST }} : "/kontent-boilerplate-statiq-net" # Make links absolute (for feeds, OG...)
+        LinkRoot: "kentico.github.io" # Fix subfolder links https://statiq.dev/framework/configuration/settings
+        Host: "/kontent-boilerplate-statiq-net" # Make links absolute (for feeds, OG...)
     - name: "Artifact : site"
       uses: actions/upload-artifact@v2
       with:
