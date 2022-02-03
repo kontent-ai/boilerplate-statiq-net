@@ -29,7 +29,7 @@ dotnet run -- preview
 
 ### Create a content source
 
-1. Go to [app.kontent.ai](https://app.kontent.ai) and [create an empty project](https://docs.kontent.ai/tutorials/set-up-kontent/projects/manage-projects#a-creating-projects)
+1. Go to [app.kontent.ai](https://app.kontent.ai) and [create an empty project](https://kontent.ai/learn/tutorials/manage-kontent/projects/manage-projects#a-create-projects)
 1. Go to the "Project Settings", select API keys and copy the following keys for further reference
     - Project ID
     - Management API key
@@ -43,7 +43,7 @@ dotnet run -- preview
     >    kbm --action=restore --projectId=<Project ID> --apiKey=<Management API key> --zipFilename=content
     >    ```
     >
-    > Go to your Kontent project and [publish all the imported items](https://docs.kontent.ai/tutorials/write-and-collaborate/publish-your-work/publish-content-items).
+    > Go to your Kontent project and [publish all the imported items](https://kontent.ai/learn/tutorials/write-and-collaborate/publish-your-work/publish-content-items).
 
 1. Map the codebase to the data source
     - adjust the `ProjectId` property in [appsettings.json](./appsettings.json) with your project ID.
