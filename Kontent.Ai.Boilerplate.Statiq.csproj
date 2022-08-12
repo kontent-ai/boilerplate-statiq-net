@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Kontent.Statiq" Version="2.0.0-*" />
+    <PackageReference Include="Statiq.Web" Version="1.0.0-beta.*" />
+  </ItemGroup>
+
+    <Target Name="GenerateModels" BeforeTargets="BeforeBuild;BeforeRebuild">
+    <PropertyGroup>
+      <PowerShellExe Condition=" '$(PowerShellExe)'=='' ">%WINDIR%\System32\WindowsPowerShell\v1.0\powershell.exe</PowerShellExe>
+      <ScriptLocationWin Condition=" '$(ScriptLocation)'=='' ">$(ProjectDir)\Tools\GenerateModels.ps1</ScriptLocationWin>
+      <ScriptLocationUnix Condition=" '$(ScriptLocation)'=='' ">$(ProjectDir)\Tools\GenerateModels.sh</ScriptLocationUnix>
+    </PropertyGroup>
+    <Exec Condition=" '$(OS)' == 'Windows_NT' " Command="&quot;$(PowerShellExe)&quot; -NonInteractive -executionpolicy Unrestricted -command &quot;&amp; { &quot;$(ScriptLocationWin)&quot; } &quot;">
+    </Exec>
+    <Exec Condition=" '$(OS)' != 'Windows_NT' " Command="sh $(ScriptLocationUnix)">
+    </Exec>
+    <ItemGroup>
+      <Compile Remove="Models\**\*.cs" />
+      <Compile Include="Models\**\*.cs" />
+      <FileWrites Remove="Models\**\*.cs" />
+      <FileWrites Update="Models\**\*.cs" />
+    </ItemGroup>
+  </Target>
+
+</Project>

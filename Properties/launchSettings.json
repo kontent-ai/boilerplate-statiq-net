@@ -1,6 +1,6 @@
 {
   "profiles": {
-    "FromZeroToHero": {
+    "Kontent.Ai.Boilerplate.Statiq": {
       "commandName": "Project",
       "commandLineArgs": "preview"
     }
