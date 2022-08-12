@@ -5,9 +5,12 @@
 // Changes to this file will not be lost if the code is regenerated.
 // </auto-generated>
 
+using System.Linq;
+
 namespace Kontent.Ai.Boilerplate.Statiq.Models
 {
     public partial class Home
     {
+        public HeroUnit HeroUnitTyped => HeroUnit.OfType<HeroUnit>().FirstOrDefault();
     }
 }

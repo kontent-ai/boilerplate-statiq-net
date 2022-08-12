@@ -34,7 +34,7 @@ body {
 
     &.append-dot:after {
       content: ".";
-      color: $color-kontent-orange;
+      color: $color-violet;
     }
   }
 
@@ -42,7 +42,7 @@ body {
     margin: 2em 1em;
 
     a {
-      background-color: $color-secondary;
+      background-color: $color-violet;
       border: none;
       color: $color-primary;
       padding: 15px 32px;
@@ -52,6 +52,13 @@ body {
       font-size: 16px;
       text-transform: uppercase;
       font-weight: bold;
+      border-radius: 3em;
+
+      &:hover {
+        background-color: $color-primary;
+        color: $color-secondary;
+      }
+
     }
   }
 }
