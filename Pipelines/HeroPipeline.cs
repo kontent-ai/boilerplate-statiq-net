@@ -4,6 +4,8 @@ using Kontent.Statiq;
 using Statiq.Common;
 using Statiq.Core;
 using Statiq.Razor;
+using Kontent.Ai.Urls.Delivery.QueryParameters.Filters;
+using Kontent.Ai.Urls.Delivery.QueryParameters;
 
 namespace Kontent.Ai.Boilerplate.Statiq
 {
@@ -22,7 +24,7 @@ namespace Kontent.Ai.Boilerplate.Statiq
                     new ReadFiles(patterns: "_Hero.cshtml")
                 ),
                 new RenderRazor()
-                    .WithModel(KontentConfig.As<Hero>()),
+                    .WithModel(KontentConfig.As<Home>()),
                 new SetDestination(new NormalizedPath("index.html")),
                 new WriteFiles()
             };
