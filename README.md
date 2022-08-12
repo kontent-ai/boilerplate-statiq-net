@@ -3,7 +3,7 @@
 ![Build and publish](https://github.com/Kentico/kontent-boilerplate-statiq-net/workflows/Publish/badge.svg)
 [![Live Demo](https://img.shields.io/badge/Live-DEMO-brightgreen.svg?logo=github&logoColor=white)](https://kentico.github.io/kontent-boilerplate-statiq-net)
 
-Boilerplate utilizing [Statiq](https://statiq.dev/) and [Kentico Kontent](https://kontent.ai) to provide a starting point in the Jamstack world for .NET developers.
+Boilerplate utilizing [Statiq](https://statiq.dev/) and [Kontent by Kentico](https://kontent.ai) to provide a starting point in the Jamstack world for .NET developers.
 
 ![Screenshot](./screenshot.png)
 
@@ -25,11 +25,11 @@ dotnet run -- preview
 
 🎊🎉 **Visit <http://localhost:5080> and start exploring the code base!**
 
-> By default, the content is loaded from a shared Kentico Kontent project. If you want to use your own clone of the project so that you can customize it and experiment with Kontent, continue to the next section.
+> By default, the content is loaded from a shared Kontent project. If you want to use your own clone of the project so that you can customize it and experiment with Kontent, continue to the next section.
 
 ### Create a content source
 
-1. Go to [app.kontent.ai](https://app.kontent.ai) and [create an empty project](https://docs.kontent.ai/tutorials/set-up-kontent/projects/manage-projects#a-creating-projects)
+1. Go to [app.kontent.ai](https://app.kontent.ai) and [create an empty project](https://kontent.ai/learn/tutorials/manage-kontent/projects/manage-projects#a-create-projects)
 1. Go to the "Project Settings", select API keys and copy the following keys for further reference
     - Project ID
     - Management API key
@@ -43,12 +43,12 @@ dotnet run -- preview
     >    kbm --action=restore --projectId=<Project ID> --apiKey=<Management API key> --zipFilename=content
     >    ```
     >
-    > Go to your Kontent project and [publish all the imported items](https://docs.kontent.ai/tutorials/write-and-collaborate/publish-your-work/publish-content-items).
+    > Go to your Kontent project and [publish all the imported items](https://kontent.ai/learn/tutorials/write-and-collaborate/publish-your-work/publish-content-items).
 
 1. Map the codebase to the data source
     - adjust the `ProjectId` property in [appsettings.json](./appsettings.json) with your project ID.
 
-🚀 **You are now ready to use the site with your own Kentico Kontent project as data source on <http://localhost:5080>!** 🚀
+🚀 **You are now ready to use the site with your own Kontent project as data source on <http://localhost:5080>!** 🚀
 
 ## Features
 
@@ -59,8 +59,8 @@ dotnet run -- preview
 
 ## How it's build
 
-All of the information about boilerplate creation and the content modeling in Kentico Kontent have been written up on the blog post [Jamstack on .NET - From zero to hero with Statiq and Kontent](https://ondrej.chrastina.tech/journal/jamstack-on-net-from-zero-to-hero-with-statiq-and-kontent).
+All of the information about boilerplate creation and the content modeling in Kontent have been written up on the blog post [Jamstack on .NET - From zero to hero with Statiq and Kontent](https://ondrej.chrastina.tech/journal/jamstack-on-net-from-zero-to-hero-with-statiq-and-kontent).
 
 ## Resources
 
-See more complex sample application: [Kentico Kontent Statiq - Lumen Starter](https://github.com/Kentico/statiq-starter-kontent-lumen)
+See more complex sample application: [Kontent Statiq - Lumen Starter](https://github.com/Kentico/statiq-starter-kontent-lumen)
