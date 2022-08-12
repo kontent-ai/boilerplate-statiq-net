@@ -1,9 +1,9 @@
 # Statiq boilerplate for Kontent
 
-![Build and publish](https://github.com/Kentico/kontent-boilerplate-statiq-net/workflows/Publish/badge.svg)
-[![Live Demo](https://img.shields.io/badge/Live-DEMO-brightgreen.svg?logo=github&logoColor=white)](https://kentico.github.io/kontent-boilerplate-statiq-net)
+![Build and publish](https://github.com/kontent-ai/boilerplate-statiq-net/workflows/Publish/badge.svg)
+[![Live Demo](https://img.shields.io/badge/Live-DEMO-brightgreen.svg?logo=github&logoColor=white)](https://kontent-ai.github.io/boilerplate-statiq-net)
 
-Boilerplate utilizing [Statiq](https://statiq.dev/) and [Kontent by Kentico](https://kontent.ai) to provide a starting point in the Jamstack world for .NET developers.
+Boilerplate utilizing [Statiq](https://statiq.dev/) and [Kontent.ai](https://kontent.ai) to provide a starting point in the Jamstack world for .NET developers.
 
 ![Screenshot](./screenshot.png)
 
@@ -29,38 +29,26 @@ dotnet run -- preview
 
 ### Create a content source
 
-1. Go to [app.kontent.ai](https://app.kontent.ai) and [create an empty project](https://kontent.ai/learn/tutorials/manage-kontent/projects/manage-projects#a-create-projects)
-1. Go to the "Project Settings", select API keys and copy the following keys for further reference
-    - Project ID
-    - Management API key
-1. Use the [Template Manager UI](https://kentico.github.io/kontent-template-manager/import) for importing the content from [`kontent-backup.zip`](./kontent-backup.zip) file and API keys from previous step. Check *Publish language variants after import* option before import.
+Application itself is configured to use shared alvawys avalable Kontent-ai project.
 
-    > Alternatively, you can use the [Kontent Backup Manager](https://github.com/Kentico/kontent-backup-manager-js) and import data to the newly created project from [`content.zip`](./content.zip) file via command line:
-    >
-    >   ```sh
-    >    npm i -g @kentico/kontent-backup-manager
-    >
-    >    kbm --action=restore --projectId=<Project ID> --apiKey=<Management API key> --zipFilename=content
-    >    ```
-    >
-    > Go to your Kontent project and [publish all the imported items](https://kontent.ai/learn/tutorials/write-and-collaborate/publish-your-work/publish-content-items).
+If you want to generate the clone of the project in order to be able to edit the content, use [Sample site generator](https://app.kontent.ai/sample-site-configuration).
 
-1. Map the codebase to the data source
-    - adjust the `ProjectId` property in [appsettings.json](./appsettings.json) with your project ID.
+1. Use "CREATE A NEW SAMPLE PROJECT" for generating the project.
+2. Access [the project listing on Kontent.ai application]
+3. Select newly generated project (its name is about to be Sample Project M/DD/YYYY, H:MM:SS AM/PM).
+4. Enter Project settings -> API keys and copy the Project ID.
+5. Adjust `appsettings.json`, `Tools/GenerateModels.ps1`, and `Tools/GenerateModels.sh` by using your project ID.
+6. Rebuild the project and run `dotnet run -- preview`.
 
-🚀 **You are now ready to use the site with your own Kontent project as data source on <http://localhost:5080>!** 🚀
+🚀 **You are now ready to use the site with your own Kontent.ai project as data source on <http://localhost:5080>!** 🚀
 
 ## Features
 
-- [Kontent Model Generator](https://github.com/Kentico/kontent-generators-net) for generating strongly-typed models from Kontent model.
-- [Kontent.Statiq](https://www.nuget.org/packages/Kontent.Statiq) module for simple data loading from Kontent to strongly-typed models
+- [Kontent.ai Model Generator](https://github.com/kontent-ai/generators-net) for generating strongly-typed models from Kontent.ai model.
+- [Kontent.Statiq](https://www.nuget.org/packages/Kontent.Statiq) module for simple data loading from Kontent.ai to strongly-typed models
 - [Sass](https://sass-lang.com/) initial styles for easier style including [reset.css](http://meyerweb.com/eric/tools/css/reset/)
 - Razor template engine setup with simple layout
 
 ## How it's build
 
 All of the information about boilerplate creation and the content modeling in Kontent have been written up on the blog post [Jamstack on .NET - From zero to hero with Statiq and Kontent](https://ondrej.chrastina.tech/journal/jamstack-on-net-from-zero-to-hero-with-statiq-and-kontent).
-
-## Resources
-
-See more complex sample application: [Kontent Statiq - Lumen Starter](https://github.com/Kentico/statiq-starter-kontent-lumen)
