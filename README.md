@@ -25,7 +25,7 @@ dotnet run -- preview
 
 🎊🎉 **Visit <http://localhost:5080> and start exploring the code base!**
 
-> By default, the content is loaded from a shared Kontent project. If you want to use your own clone of the project so that you can customize it and experiment with Kontent, continue to the next section.
+> By default, the content is loaded from a shared Kontent.ai project. If you want to use your own clone of the project so that you can customize it and experiment with Kontent, continue to the next section.
 
 ### Create a content source
 
@@ -51,4 +51,4 @@ If you want to generate the clone of the project in order to be able to edit the
 
 ## How it's build
 
-All of the information about boilerplate creation and the content modeling in Kontent have been written up on the blog post [Jamstack on .NET - From zero to hero with Statiq and Kontent](https://ondrej.chrastina.tech/journal/jamstack-on-net-from-zero-to-hero-with-statiq-and-kontent).
+All of the information about boilerplate creation and the content modeling in Kontent.ai have been written up on the blog post [Jamstack on .NET - From zero to hero with Statiq and Kontent](https://ondrej.chrastina.tech/journal/jamstack-on-net-from-zero-to-hero-with-statiq-and-kontent).
