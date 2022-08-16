@@ -1,4 +1,4 @@
-# Statiq boilerplate for Kontent
+# Statiq boilerplate for Kontent.ai
 
 ![Build and publish](https://github.com/kontent-ai/boilerplate-statiq-net/workflows/Publish/badge.svg)
 [![Live Demo](https://img.shields.io/badge/Live-DEMO-brightgreen.svg?logo=github&logoColor=white)](https://kontent-ai.github.io/boilerplate-statiq-net)
