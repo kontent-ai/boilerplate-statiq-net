@@ -33,8 +33,7 @@ jobs:
     - name: Publish
       run: dotnet run --configuration Release  
       env:
-        LinkRoot: "kontent-ai.github.io" # Fix subfolder links https://statiq.dev/framework/configuration/settings
-        Host: "/boilerplate-statiq-net" # Make links absolute (for feeds, OG...)
+        LinkRoot: "boilerplate-statiq-net"
     - name: "Artifact : site"
       uses: actions/upload-artifact@v2
       with:
