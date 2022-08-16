@@ -1,15 +1,15 @@
-@model FromZeroToHero.Models.Hero;
+@model Kontent.Ai.Boilerplate.Statiq.Models.Home;
 
 @{
-  ViewBag.Title = @Model.Headline;
+  ViewBag.Title = @Model.HeroUnitTyped.Title;
 }
 
 <div class="hero">
-  <h1 class="append-dot">@Model.Headline</h1>
+  <h1 class="append-dot">@Model.HeroUnitTyped.Title</h1>
   <div class="summary">
-    @Model.Summary
+    @Html.Raw(Model.HeroUnitTyped.MarketingMessage)
   </div>
   <div class="button">
-    <a href="@Model.CtaUrl">@Model.CtaLabel</a>
+    <a href="#">Dummy CTA</a>
   </div>
 <div>

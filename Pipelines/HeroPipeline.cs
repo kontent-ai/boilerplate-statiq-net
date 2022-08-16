@@ -1,13 +1,13 @@
-using FromZeroToHero.Models;
-using Kentico.Kontent.Delivery.Abstractions;
-using Kentico.Kontent.Delivery.Urls.QueryParameters;
-using Kentico.Kontent.Delivery.Urls.QueryParameters.Filters;
+using Kontent.Ai.Delivery.Abstractions;
+using Kontent.Ai.Boilerplate.Statiq.Models;
 using Kontent.Statiq;
 using Statiq.Common;
 using Statiq.Core;
 using Statiq.Razor;
+using Kontent.Ai.Urls.Delivery.QueryParameters.Filters;
+using Kontent.Ai.Urls.Delivery.QueryParameters;
 
-namespace FromZeroToHero
+namespace Kontent.Ai.Boilerplate.Statiq
 {
     public class HeroPipeline : Pipeline
     {
@@ -15,16 +15,16 @@ namespace FromZeroToHero
         {
             ProcessModules = new ModuleList
             {
-                new Kontent<Hero>(client)
+                new Kontent<Home>(client)
                     .WithQuery(
-                        new EqualsFilter("system.codename", "hero"),
+                        new EqualsFilter("system.codename", "home"),
                         new LimitParameter(1)
                     ),
                 new MergeContent(
                     new ReadFiles(patterns: "_Hero.cshtml")
                 ),
                 new RenderRazor()
-                    .WithModel(KontentConfig.As<Hero>()),
+                    .WithModel(KontentConfig.As<Home>()),
                 new SetDestination(new NormalizedPath("index.html")),
                 new WriteFiles()
             };

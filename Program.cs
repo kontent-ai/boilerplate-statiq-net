@@ -1,14 +1,14 @@
 ﻿using System.Threading.Tasks;
-using FromZeroToHero.Models;
-using Kentico.Kontent.Delivery.Abstractions;
-using Kentico.Kontent.Delivery.Extensions;
+using Kontent.Ai.Boilerplate.Statiq.Models;
+using Kontent.Ai.Delivery.Abstractions;
+using Kontent.Ai.Delivery.Extensions;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Statiq.App;
 using Statiq.Common;
 using Statiq.Web;
 
-namespace FromZeroToHero
+namespace Kontent.Ai.Boilerplate.Statiq
 {
     public class Program
     {
