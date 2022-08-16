@@ -11,7 +11,7 @@ Boilerplate utilizing [Statiq](https://statiq.dev/) and [Kontent.ai](https://kon
 
 ### Requirements
 
-- [.NET 5](https://dotnet.microsoft.com/download)
+- [.NET 6](https://dotnet.microsoft.com/download)
 
 ### Clone the codebase
 
@@ -51,4 +51,4 @@ If you want to generate the clone of the project in order to be able to edit the
 
 ## How it's build
 
-All of the information about boilerplate creation and the content modeling in Kontent.ai have been written up on the blog post [Jamstack on .NET - From zero to hero with Statiq and Kontent](https://ondrej.chrastina.tech/journal/jamstack-on-net-from-zero-to-hero-with-statiq-and-kontent).
+All of the information about boilerplate creation and the content modeling in Kontent.ai have been written up on the blog post [Jamstack on .NET - From zero to hero with Statiq and Kontent.ai](https://ondrej.chrastina.tech/journal/jamstack-on-net-from-zero-to-hero-with-statiq-and-kontent).
