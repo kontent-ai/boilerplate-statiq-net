@@ -34,7 +34,7 @@ Application itself is configured to use shared alvawys avalable Kontent-ai proje
 If you want to generate the clone of the project in order to be able to edit the content, use [Sample site generator](https://app.kontent.ai/sample-site-configuration).
 
 1. Use "CREATE A NEW SAMPLE PROJECT" for generating the project.
-2. Access [the project listing on Kontent.ai application]
+2. Access the project listing on Kontent.ai application](https://app.kontent.ai/projects)
 3. Select newly generated project (its name is about to be Sample Project M/DD/YYYY, H:MM:SS AM/PM).
 4. Enter Project settings -> API keys and copy the Project ID.
 5. Adjust `appsettings.json`, `Tools/GenerateModels.ps1`, and `Tools/GenerateModels.sh` by using your project ID.
